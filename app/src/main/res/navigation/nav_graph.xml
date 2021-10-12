@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_tasksFragment_to_taskDetailFragment"
             app:destination="@id/TaskDetailFragment" />
+        <action
+            android:id="@+id/action_TasksFragment_to_AddEditTaskFragment"
+            app:destination="@id/AddEditTaskFragment" />
     </fragment>
     <fragment
         android:id="@+id/TaskDetailFragment"
@@ -41,6 +44,15 @@
         tools:layout="@layout/taskdetail_frag" >
         <action
             android:id="@+id/action_taskDetailFragment_to_tasksFragment"
+            app:destination="@id/TasksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddEditTaskFragment"
+        android:name="com.mynt.todo.presentation.addedittask.AddEditTaskFragment"
+        android:label="addtask_frag"
+        tools:layout="@layout/addtask_frag" >
+        <action
+            android:id="@+id/action_AddEditTaskFragment_to_TasksFragment"
             app:destination="@id/TasksFragment" />
     </fragment>
 </navigation>
