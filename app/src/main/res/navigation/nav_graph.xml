@@ -49,8 +49,12 @@
     <fragment
         android:id="@+id/AddEditTaskFragment"
         android:name="com.mynt.todo.presentation.addedittask.AddEditTaskFragment"
-        android:label="addtask_frag"
+        android:label="{title}"
         tools:layout="@layout/addtask_frag" >
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
         <action
             android:id="@+id/action_AddEditTaskFragment_to_TasksFragment"
             app:destination="@id/TasksFragment" />

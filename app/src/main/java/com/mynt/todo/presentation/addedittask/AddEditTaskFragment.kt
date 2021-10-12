@@ -9,6 +9,8 @@ import com.mynt.todo.R
 
 class AddEditTaskFragment : Fragment() {
 
+//    private lateinit var binding:
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
