@@ -21,5 +21,6 @@ task clean(type: Delete) {
 
 // Versions
 ext {
-
+    roomVersion = '2.3.0'
+    espressoVersion = '3.4.0'
 }
