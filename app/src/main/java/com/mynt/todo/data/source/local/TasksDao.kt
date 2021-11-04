@@ -1,5 +1,6 @@
 package com.mynt.todo.data.source.local
 
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
@@ -8,6 +9,7 @@ import com.mynt.todo.domain.Task
 /**
  * Data Access Object for the tasks table
  */
+@Dao
 interface TasksDao {
 
     /**

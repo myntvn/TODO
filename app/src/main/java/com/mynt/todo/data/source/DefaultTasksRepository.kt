@@ -21,8 +21,8 @@ class DefaultTasksRepository(
         // Do in memory cache update to keep the app UI up to date
         cacheAndPerform(task) {
             coroutineScope {
-                launch { tasksRemoteDataSource.saveTask() }
-                launch { tasksLocalDataSource.saveTask() }
+                launch { tasksRemoteDataSource.saveTask(task) }
+                launch { tasksLocalDataSource.saveTask(task) }
             }
         }
     }
